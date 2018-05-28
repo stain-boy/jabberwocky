@@ -90,7 +90,7 @@ apppass="$(< /dev/urandom tr -dc '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij
 appport="$(shuf -i 10001-32001 -n 1)"
 #
 # This wil take the previously generated port and test it to make sure it is not in use, generating it again until it has selected an open port.
-while [[ "$(ss -ln | grep ':'"$appport"'' | grep -c 'LISTEN')" -eq "1" ]]; do appport="$(shuf -i 10001-32001 -n 1)"; done
+while [[ "$(ss -l -n | grep ':'"$appport"'' | grep -c 'LISTEN')" -eq "1" ]]; do appport="$(shuf -i 10001-32001 -n 1)"; done
 #
 # Script user's http www URL in the format http://username.server.feralhosting.com/
 host1http="http://$(whoami).$(hostname -f)/"
