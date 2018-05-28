@@ -12,7 +12,7 @@
 #
 # Bash Command for easy reference:
 #
-# wget -qO ~/install.murmur http://git.io/-mVd3g && bash ~/install.murmur
+# wget -qO ~/install.murmur https://git.io/vhYy0 && bash ~/install.murmur
 #
 ############################
 ###### Basic Info End ######
@@ -64,7 +64,7 @@ fi
 ############################
 #
 # Script Version number is set here.
-scriptversion="2.0.2"
+scriptversion="2.0.3"
 #
 # Script name goes here. Please prefix with install.
 scriptname="install.murmur"
@@ -73,16 +73,16 @@ scriptname="install.murmur"
 scriptauthor="zovt"
 #
 # Contributor's names go here.
-contributors="randomessence"
+contributors="randomessence, stain-boy"
 #
 # Set the http://git.io/ shortened URL for the raw github URL here:
-gitiourl="http://git.io/-mVd3g"
+gitiourl="https://git.io/vhYy0"
 #
 # Don't edit: This is the bash command shown when using the info option.
 gitiocommand="wget -qO ~/$scriptname $gitiourl && bash ~/$scriptname"
 #
 # This is the raw github url of the script to use with the built in updater.
-scripturl="https://raw.github.com/feralhosting/feralfilehosting/master/Feral%20Wiki/Software/Mumble%20client%20and%20murmur%20server/scripts/install.murmur.sh"
+scripturl="https://github.com/stain-boy/jabberwocky/edit/master/install.murmur.sh"
 #
 # This will generate a 20 character random passsword for use with your applications.
 apppass="$(< /dev/urandom tr -dc '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' | head -c20; echo;)"
@@ -119,14 +119,14 @@ gitissue="https://github.com/feralhosting/feralfilehosting/issues/new"
 ## Custom Variables Start ##
 ############################
 #
-murmurversion="1.2.10"
+murmurversion="1.2.18-1"
 #
 ############################
 ### Custom Variables End ###
 ############################
 #
 # Disables the built in script updater permanently by setting this variable to 0.
-updaterenabled="1"
+updaterenabled="0"
 #
 ############################
 ####### Variable End #######
